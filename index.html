@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body no-scroll" id="body">
+        <div class="header parent-container">
+            <span class="header-content box-container">
+                <div class="logo">
+                    <a href="#"><img class="header-logo" src="Img/Beta 1 1.png"></a>
+                </div>
+                <div class="sup ">
+                    <div class="sup-text hide-on-mobile" @onclick="ToggleBookTest">Book Test</div>
+                    <div class="sup-text hide-on-mobile" @onclick="ToggleTrackOrder">Track Test</div>
+                    <a href="#" class="hide-on-mobile">
+                        <button class="sup-btn">
+                            Support <i class="fa-brands fa-whatsapp"></i>
+                        </button>
+                    </a>
+                    <a href="#" class="hide-on-mobile"><img class="cart" src="Img/Icon.png"></a>
+                    <img class="menu-icon" src="Img/Menu Icon.png">
+                </div>
+            </span>
+        </div>
+    
+        <div class="hero-sec parent-container">
+            <div class="hero-sec-1 box-container">
+                <div class="left-content">
+                    <div class="left-text">
+                        <p class="fast-sec">
+                            Fast.Secure.Convenient. <br>
+                            <span class="diagn">Diagnostic Test Services</span>
+                        </p>
+                        <p class="redefine">
+                            Redefining healthcare accessibility by bringing your <br> diagnostic tests to your doorstep.
+                        </p>
+                        <div style="display: flex; flex-direction: column; align-items: center; width: max-content; gap: 1rem;">
+                            <div class="search-field" @onclick="ToggleSearch">
+                                <input type="text" class="search" name="" id=""
+                                       placeholder="Search for lab test or checkups">
+                                <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                            <div class="discount">
+                                <span class="discount-sub-0">Get </span>
+                                <span class="discount-sub-1"> 20% OFF*</span>
+                                <span class="discount-sub-2"> on first order above GHS 500 | Use: </span>
+                                <span class="discount-sub-3">SCYCARE500</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="mask-group" src="Img/nurse-img.svg" />
+            </div>
+        </div>
+    
+        <div class="why-scycare parent-container">
+            <p class="why-text">Why Scycare Lab?</p>
+            <div class="why-groups box-container">
+                <div class="why-group-1">
+                    <img class="test-tube" src="Img/test-tube 1.png" alt="">
+                    <div class="why-group-1-sub">
+                        <p class="fast-safe">Fast, Safe &amp; Accurate</p>
+                        <p class="on-time">100% on time collection &amp; reporting</p>
+                    </div>
+                </div>
+                <div class="why-group-1">
+                    <img class="test-tube" src="Img/lab 1.png" alt="">
+                    <div class="why-group-1-sub">
+                        <p class="fast-safe">State-of-the-Art Labs</p>
+                        <p class="on-time">Labs certified by HeFRA </p>
+                    </div>
+                </div>
+                <div class="why-group-1">
+                    <img class="test-tube" src="Img/scientist 1.png" alt="">
+                    <div class="why-group-1-sub">
+                        <p class="fast-safe">Hygienic &amp; professional eMedics </p>
+                        <p class="on-time">100+ hours of training</p>
+                    </div>
+                </div>
+            </div>
+            <div class="order">
+                <button class="order-btn">Order Your Test Now</button>
+            </div>
+        </div>
+    
+        <div class="steps-container parent-container">
+            <div class="box-container">
+                <div class="steps">
+                    <p class="steps-text-1">Easy ordering in <strong>3 STEPS</strong></p>
+                    <div class="steps-sub-1">
+                        <div class="steps-num">
+                            <div class="group-1306">1</div>
+                            <div class="line-55"></div>
+                            <div class="auto-group">
+                                <div class="group-1307">2</div>
+                                <div class="line-54"></div>
+                            </div>
+                            <div class="group-1308">3</div>
+                        </div>
+                        <div class="steps-sub-text">
+                            <p class="select-test steps-text">Select tests or checkups</p>
+                            <p class="add-details steps-text">Add your details</p>
+                            <p class="complete-request steps-text">Pay and complete your request</p>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="popular-checkups parent-container">
+            <div class="box-container">
+                <div class="pop-sec">
+                    <p class="popular-text">Popular Checkups</p>
+                    <button class="view-all-checkups">View All Checkups</button>
+                </div>
+                <div class="checkup">
+                    <div class="checkup-sub-1">
+                        <div class="checkup-sub-2 hide-on-tablet">
+                            <div class="checkup-card">
+                                <img class="intersect" src="Img/Intersect.png" alt="">
+                                <div class="check-card">
+                                    <div class="check-sub-1">
+                                        <div class="top-flex">
+                                            <p class="full-body">Full Body Checkup - Comprehensive</p>
+                                            <div class="amount">
+                                                <p class="ghs">GHS</p>
+                                                <p class="amount-num">80</p>
+                                                <p class="amount-num-1">.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="check-sub-1-1">
+                                            <div class="parameters">
+                                                <img src="Img/Group.png" alt="">
+                                                <P class="para-text">
+                                                    <strong><span class="para-text-1">15 Lab Tests</span></strong>
+                                                    <span class="para-text-2"> <br> In Checkup</span>
+                                                </P>
+                                            </div>
+                                            <div class="parameters">
+                                                <img src="Img/Group 2739.png" alt="">
+                                                <P class="para-text">
+                                                    <span class="para-text-1">Report Within</span>
+                                                    <strong><span class="para-text-2"> <br> 7 Hours</span></strong>
+                                                </P>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="check-sub-2">
+                                        <button class="view-details">View Details</button>
+                                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkup-card">
+                                <img class="intersect" src="Img/Intersect.png" alt="">
+                                <div class="check-card">
+                                    <div class="check-sub-1">
+                                        <div class="top-flex">
+                                            <p class="full-body">Full Body Checkup - Comprehensive</p>
+                                            <div class="amount">
+                                                <p class="ghs">GHS</p>
+                                                <p class="amount-num">80</p>
+                                                <p class="amount-num-1">.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="check-sub-1-1">
+                                            <div class="parameters">
+                                                <img src="Img/Group.png" alt="">
+                                                <P class="para-text">
+                                                    <strong><span class="para-text-1">15 Lab Tests</span></strong>
+                                                    <span class="para-text-2"> <br> In Checkup</span>
+                                                </P>
+                                            </div>
+                                            <div class="parameters">
+                                                <img src="Img/Group 2739.png" alt="">
+                                                <P class="para-text">
+                                                    <span class="para-text-1">Report Within</span>
+                                                    <strong><span class="para-text-2"> <br> 7 Hours</span></strong>
+                                                </P>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="check-sub-2">
+                                        <button href="lab-details.html" class="view-details">View Details</button>
+                                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkup-card">
+                                <img class="intersect" src="Img/Intersect.png" alt="">
+                                <div class="check-card">
+                                    <div class="check-sub-1">
+                                        <div class="top-flex">
+                                            <p class="full-body">Full Body Checkup - Comprehensive</p>
+                                            <div class="amount">
+                                                <p class="ghs">GHS</p>
+                                                <p class="amount-num">80</p>
+                                                <p class="amount-num-1">.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="check-sub-1-1">
+                                            <div class="parameters">
+                                                <img src="Img/Group.png" alt="">
+                                                <P class="para-text">
+                                                    <strong><span class="para-text-1">15 Lab Tests</span></strong>
+                                                    <span class="para-text-2"> <br> In Checkup</span>
+                                                </P>
+                                            </div>
+                                            <div class="parameters">
+                                                <img src="Img/Group 2739.png" alt="">
+                                                <P class="para-text">
+                                                    <span class="para-text-1">Report Within</span>
+                                                    <strong><span class="para-text-2"> <br> 7 Hours</span></strong>
+                                                </P>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="check-sub-2">
+                                        <button class="view-details">View Details</button>
+                                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- TODO: Implement carousel for tablet view-->
+                        <div class="checkup-sub-2 hide-on-desktop show-on-tablet">
+                            <div class="checkup-card">
+                                <img class="intersect" src="Img/Intersect.png" alt="">
+                                <div class="check-card">
+                                    <div class="check-sub-1">
+                                        <div class="top-flex">
+                                            <p class="full-body">Full Body Checkup - Comprehensive</p>
+                                            <div class="amount">
+                                                <p class="ghs">GHS</p>
+                                                <p class="amount-num">80</p>
+                                                <p class="amount-num-1">.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="check-sub-1-1">
+                                            <div class="parameters">
+                                                <img src="Img/Group.png" alt="">
+                                                <P class="para-text">
+                                                    <strong><span class="para-text-1">15 Lab Tests</span></strong>
+                                                    <span class="para-text-2"> <br> In Checkup</span>
+                                                </P>
+                                            </div>
+                                            <div class="parameters">
+                                                <img src="Img/Group 2739.png" alt="">
+                                                <P class="para-text">
+                                                    <span class="para-text-1">Report Within</span>
+                                                    <strong><span class="para-text-2"> <br> 7 Hours</span></strong>
+                                                </P>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="check-sub-2">
+                                        <button class="view-details">View Details</button>
+                                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="checkup-card">
+                                <img class="intersect" src="Img/Intersect.png" alt="">
+                                <div class="check-card">
+                                    <div class="check-sub-1">
+                                        <div class="top-flex">
+                                            <p class="full-body">Full Body Checkup - Comprehensive</p>
+                                            <div class="amount">
+                                                <p class="ghs">GHS</p>
+                                                <p class="amount-num">80</p>
+                                                <p class="amount-num-1">.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="check-sub-1-1">
+                                            <div class="parameters">
+                                                <img src="Img/Group.png" alt="">
+                                                <P class="para-text">
+                                                    <strong><span class="para-text-1">15 Lab Tests</span></strong>
+                                                    <span class="para-text-2"> <br> In Checkup</span>
+                                                </P>
+                                            </div>
+                                            <div class="parameters">
+                                                <img src="Img/Group 2739.png" alt="">
+                                                <P class="para-text">
+                                                    <span class="para-text-1">Report Within</span>
+                                                    <strong><span class="para-text-2"> <br> 7 Hours</span></strong>
+                                                </P>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="check-sub-2">
+                                        <button class="view-details">View Details</button>
+                                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- TODO: Implement carousel for mobile view-->
+                        <div class="checkup-sub-2 hide-on-desktop show-on-mobile">
+                            <div class="checkup-card">
+                                <img class="intersect" src="Img/Intersect.png" alt="">
+                                <div class="check-card">
+                                    <div class="check-sub-1">
+                                        <div class="top-flex">
+                                            <p class="full-body">Full Body Checkup - Comprehensive</p>
+                                            <div class="amount">
+                                                <p class="ghs">GHS</p>
+                                                <p class="amount-num">80</p>
+                                                <p class="amount-num-1">.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="check-sub-1-1">
+                                            <div class="parameters">
+                                                <img src="Img/Group.png" alt="">
+                                                <P class="para-text">
+                                                    <strong><span class="para-text-1">15 Lab Tests</span></strong>
+                                                    <span class="para-text-2"> <br> In Checkup</span>
+                                                </P>
+                                            </div>
+                                            <div class="parameters">
+                                                <img src="Img/Group 2739.png" alt="">
+                                                <P class="para-text">
+                                                    <span class="para-text-1">Report Within</span>
+                                                    <strong><span class="para-text-2"> <br> 7 Hours</span></strong>
+                                                </P>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="check-sub-2">
+                                        <button class="view-details">View Details</button>
+                                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vital-body-part parent-container">
+            <div class="vital-container box-container">
+                <div class="for-vital-body">
+                    <p class="head-text">
+                        For Vital Body <br>
+                        <span style="color: #00C2E7;">Organs</span>
+                    </p>
+                    <p class="discover-our-range">
+                        Discover our range of tests for your body organs. These specialized diagnostics focus on
+                        checking
+                        the
+                        health of essential body organs, ensuring you get the care you need.
+                    </p>
+                    <button class="view-checkups">
+                        View All Checkups
+                    </button>
+                </div>
+                <div class="heart-group hide-on-mobile">
+    
+                    <div class="heart">
+                        <div class="heart-icon">
+                            <img src="Img/heart.svg" style="width: 22px;">
+                        </div>
+                        <p class="heart-text"> Heart</p>
+                    </div>
+                    <div class="heart">
+                        <div class="heart-icon">
+                            <img src="Img/blood.svg" style="width: 22px;">
+                        </div>
+                        <p class="heart-text">Blood</p>
+                    </div>
+                    <div class="heart">
+                        <div class="heart-icon">
+                            <img src="Img/kidney.svg" style="width: 22px;">
+                        </div>
+                        <p class="heart-text"> Kidney</p>
+                    </div>
+                    <div class="heart">
+                        <div class="heart-icon">
+                            <img src="Img/reproductive_organ.svg" style="width: 22px;">
+                        </div>
+                        <p class="heart-text"> Reproductive <br /> Organ</p>
+                    </div>
+                    <div class="heart">
+                        <div class="heart-icon">
+                            <img src="Img/liver.svg" style="width: 22px;">
+                        </div>
+                        <p class="heart-text"> Liver</p>
+                    </div>
+                    <div class="heart">
+                        <div class="heart-icon">
+                            <img src="Img/guts.svg" style="width: 22px;">
+                        </div>
+                        <p class="heart-text"> Guts</p>
+                    </div>
+                </div>
+                <!-- TODO: Implement carousel for mobile view-->
+                <div class="heart-group hide-on-desktop show-on-mobile">
+    
+                    <div class="heart">
+                        <div class="heart-icon">
+                            <img src="Img/heart.svg" style="width: 22px;">
+                        </div>
+                        <p class="heart-text"> Heart</p>
+                    </div>
+                    <div class="heart">
+                        <div class="heart-icon">
+                            <img src="Img/blood.svg" style="width: 22px;">
+                        </div>
+                        <p class="heart-text">Blood</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="what-people-say parent-container">
+            <div class="what-people-say-content box-container">
+                <p class="head-text">
+                    What People Say <br>
+                    <span style="color: #00C2E7;"> About Us </span>
+                </p>
+                <div class="hide-on-tablet testimonials">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <div class="client-ms-1">
+                        <div class="comment-img">
+                            <img src="Img/comment.png" alt="">
+                        </div>
+                        <div class="comment">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex eum, alias fuga veritatis
+                                praesentium soluta,
+                                nobis id at esse dignissimos rerum doloremque quibusdam, quaerat blanditiis ad laborum
+                                asperiores ratione qui.
+                            </p>
+                        </div>
+                        <p class="client-name">Drew Drew</p>
+                        <p class="client-p">Patient, Scycare</p>
+                    </div>
+                    <div class="client-ms-2">
+                        <div class="comment-img">
+                            <img src="Img/comment.png" alt="">
+                        </div>
+                        <div class="comment">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex eum, alias fuga veritatis
+                                praesentium soluta,
+                                nobis id at esse dignissimos rerum doloremque quibusdam, quaerat blanditiis ad laborum
+                                asperiores ratione qui.
+                            </p>
+                        </div>
+                        <p class="client-name">Drew Drew</p>
+                        <p class="client-p">Patient, Scycare</p>
+                    </div>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="hide-on-desktop show-on-mobile">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <div class="client-ms-2">
+                        <div class="comment-img">
+                            <img src="Img/comment.png" alt="">
+                        </div>
+                        <div class="comment">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex eum, alias fuga veritatis
+                                praesentium soluta,
+                                nobis id at esse dignissimos rerum doloremque quibusdam, quaerat blanditiis ad laborum
+                                asperiores ratione qui.
+                            </p>
+                        </div>
+                        <p class="client-name">Drew Drew</p>
+                        <p class="client-p">Patient, Scycare</p>
+                    </div>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+    
+        <div class="partner-sec parent-container">
+            <div class="partner-sec-container box-container">
+                <div class="partner-text-sec">
+                    <div>
+                        <p class="partner-p-1">Partner With Us</p>
+                        <p class="partner-p-2">
+                            Provide your patients with convenient diagnostic tests
+                            or get external source of income as a health provider
+                        </p>
+                        <button class="partner-btn">Contact Us Now</button>
+                    </div>
+                </div>
+                <div class="partner-cont-sec">
+                    <div class="cont-sec-call">
+                        <p class="your-lab">Call now to make your lab request</p>
+                        <p class="n0591819760">0591819760/0591819789</p>
+                    </div>
+                    <div class="cont-sec-chat">
+                        <div class="cont-sec-chat-1">
+                            <p class="with-sycare">Chat with Scycare</p>
+                            <p class="your-request">Clear your queries &amp; make your request through WhatsApp</p>
+                        </div>
+                        <img src="Img/WhatsApp 1.png" class="cont-sec-chat-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="frequently parent-container">
+            <div class="box-container">
+                <p class="asked">Frequently Asked Questions</p>
+                <div class="question-box">
+                    <div class="accordion">
+                        <button class="accordion-btn">
+                            How to book a lab test (blood/urine/stool) at home with Scycare in
+                            Koforidua<span class="plus-sign">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum bibendum
+                                orci,
+                                eget aliquam velit rhoncus eget.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quo cumque debitis
+                                culpa
+                                vitae sint dignissimos laborum velit minus aliquid dicta amet ullam incidunt
+                                consequatur,
+                                cum fuga vel, corrupti nam?
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur nesciunt eligendi
+                                eaque dolore eos soluta est? Voluptatibus id quam ea cumque aliquam, officiis facilis
+                                inventore voluptas repellendus qui, similique minus.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consequuntur laboriosam
+                                incidunt expedita ratione architecto voluptas quam voluptatem, debitis provident,
+                                asperiores
+                                labore, minima rem molestias recusandae tenetur fugiat magnam non.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nam, aut deleniti nemo
+                                magni, veritatis aliquam fuga mollitia non libero soluta officiis incidunt velit laborum
+                                consectetur quibusdam vel sint consequatur?
+                            </p>
+                        </div>
+                        <button class="accordion-btn">
+                            In how long will my reports be available and how will I receive
+                            them?<span class="plus-sign">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum bibendum
+                                orci,
+                                eget aliquam velit rhoncus eget.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quo cumque debitis
+                                culpa
+                                vitae sint dignissimos laborum velit minus aliquid dicta amet ullam incidunt
+                                consequatur,
+                                cum fuga vel, corrupti nam?
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur nesciunt eligendi
+                                eaque dolore eos soluta est? Voluptatibus id quam ea cumque aliquam, officiis facilis
+                                inventore voluptas repellendus qui, similique minus.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consequuntur laboriosam
+                                incidunt expedita ratione architecto voluptas quam voluptatem, debitis provident,
+                                asperiores
+                                labore, minima rem molestias recusandae tenetur fugiat magnam non.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nam, aut deleniti nemo
+                                magni, veritatis aliquam fuga mollitia non libero soluta officiis incidunt velit laborum
+                                consectetur quibusdam vel sint consequatur?
+                            </p>
+                        </div>
+                        <button class="accordion-btn">
+                            Can I make a request from other parts in Ghana?<span class="plus-sign">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum bibendum
+                                orci,
+                                eget aliquam velit rhoncus eget.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quo cumque debitis
+                                culpa
+                                vitae sint dignissimos laborum velit minus aliquid dicta amet ullam incidunt
+                                consequatur,
+                                cum fuga vel, corrupti nam?
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur nesciunt eligendi
+                                eaque dolore eos soluta est? Voluptatibus id quam ea cumque aliquam, officiis facilis
+                                inventore voluptas repellendus qui, similique minus.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consequuntur laboriosam
+                                incidunt expedita ratione architecto voluptas quam voluptatem, debitis provident,
+                                asperiores
+                                labore, minima rem molestias recusandae tenetur fugiat magnam non.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nam, aut deleniti nemo
+                                magni, veritatis aliquam fuga mollitia non libero soluta officiis incidunt velit laborum
+                                consectetur quibusdam vel sint consequatur?
+                            </p>
+                        </div>
+                        <button class="accordion-btn">
+                            How can I get a blood test done at home in 60 mins?<span class="plus-sign">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum bibendum
+                                orci,
+                                eget aliquam velit rhoncus eget.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quo cumque debitis
+                                culpa
+                                vitae sint dignissimos laborum velit minus aliquid dicta amet ullam incidunt
+                                consequatur,
+                                cum fuga vel, corrupti nam?
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur nesciunt eligendi
+                                eaque dolore eos soluta est? Voluptatibus id quam ea cumque aliquam, officiis facilis
+                                inventore voluptas repellendus qui, similique minus.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consequuntur laboriosam
+                                incidunt expedita ratione architecto voluptas quam voluptatem, debitis provident,
+                                asperiores
+                                labore, minima rem molestias recusandae tenetur fugiat magnam non.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nam, aut deleniti nemo
+                                magni, veritatis aliquam fuga mollitia non libero soluta officiis incidunt velit laborum
+                                consectetur quibusdam vel sint consequatur?
+                            </p>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    
+        <footer class="footer parent-container">
+            <div class="box-container">
+                <div class="making-health-sec">
+                    <div class="making-health-sec-img">
+                        <img src="Img/SVG 4 1.png" alt="">
+                    </div>
+                    <div class="making-health">
+                        <p>
+                            Making healthcare swift <br>
+                            and accessibile to all.
+                        </p>
+                        <button>Partner with us</button>
+                    </div>
+                </div>
+    
+                <div class="payment">
+                    <p>Payment methods we accept:</p>
+                    <img src="Img/Group 2733.png" alt="">
+                </div>
+    
+                <div class="footer-links">
+                    <div class="footer-scycare">
+                        <p class="f-head">SCYCARE</p>
+                        <div class="social-list">
+                            <div class="social-link">
+                                <a href="">
+                                    <img src="Img/facebook.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="Img/instagram.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="Img/linkden.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="Img/x-twitter.png" alt="">
+                                </a>
+                            </div>
+                            <div class="downloads">
+                                <a href="">
+                                    <img src="Img/Google Play.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="Img/App Store.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-page-links">
+                        <div class="footer-about">
+                            <p class="f-head">ABOUT SCYCARE</p>
+                            <div class="footer-about-text">
+                                <a href="">About Us</a>
+                                <a href="">Partner as Doctor</a>
+                                <a href="">Partner as Organization</a>
+                                <a href="">Contact Us</a>
+                                <a href="">Terms and Condition</a>
+                                <a href="">Privacy Policy</a>
+                            </div>
+                        </div>
+                        <div class="footer-popular">
+                            <p class="f-head">POPULAR LAB TESTS</p>
+                            <div class="footer-popular-text">
+                                <a href="">Full Blood Count (FBC)</a>
+                                <a href="">Liver Function Test</a>
+                                <a href="">Diabetes Test</a>
+                                <a href="">Kidney Function Test</a>
+                                <a href="">Cholesterol Test</a>
+                            </div>
+                        </div>
+                        <div class="footer-checkups">
+                            <p class="f-head">POPULAR CHECKUPS</p>
+                            <div class="footer-checkups-text">
+                                <a href="">Basic Health</a>
+                                <a href="">Kids Essential Health</a>
+                                <a href="">Basic Women's Health</a>
+                                <a href="">Basic Men's Health</a>
+                                <a href="">Diabetes Care</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-scynett">
+            <img src="Img/SVG 4 1.png" class="svg-bottom">
+            <p>SCYCARE © 2024. All Rights Reserved</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
